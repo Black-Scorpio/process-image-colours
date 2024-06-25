@@ -1,0 +1,7 @@
+Flask==2.1.2
+Werkzeug==2.1.2
+Pillow==9.1.1
+webcolors==1.12
+scikit-learn
+numpy
+flask

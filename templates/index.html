@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disassemble the Colours!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Disassemble the Colours!</h1>
+    <div id="progress">Uploading and processing...</div>
+    <div class="drop-area" id="drop-area">
+        Drop image here or click to upload
+        <img id="uploaded-image" src="" alt="" style="display: none;"/>
+    </div>
+    <input type="file" id="file-input" style="display: none;">
+    <button id="upload-btn">Upload Image</button>
+    <div id="colors" class="colors-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
